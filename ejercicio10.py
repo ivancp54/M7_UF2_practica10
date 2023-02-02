@@ -7,9 +7,9 @@ ids = [3, 13, 34, 56, 70, 85, 110, 120, 210, 400]
 
 # seleccionar las filas con esos ids
 df_sel = df.loc[df["id"].isin(ids)]
-
 # imprimir los datos de las filas seleccionadas
 print(df_sel)
+
 
 def clock_speed():
     df_clock_speed = df_sel[["id","clock_speed"]]
